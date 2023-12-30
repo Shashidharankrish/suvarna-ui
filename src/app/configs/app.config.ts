@@ -2,7 +2,7 @@ import { InjectionToken } from '@angular/core';
 
 export let APP_CONFIG = new InjectionToken('app.config');
 
-export const BASE_URL = '/mandara/api';
+export const BASE_URL = '/suvarna/api';
 
 export const AppConfig: any = {
     routes: {
@@ -12,7 +12,6 @@ export const AppConfig: any = {
         error404: '404',
         privacy: 'privacy',
         my_account: 'profile',
-        oldreports: 'mandara/ui/report',
         admin: 'admin'
     },
     login: {
