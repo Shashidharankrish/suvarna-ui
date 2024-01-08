@@ -1,26 +1,31 @@
+// app-routing.module.ts
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppConfig } from './configs/app.config'
+import { LoginPageComponent } from './core/components/login/login-page/login-page.component';
+import { DashboardPageComponent } from './core/components/dashboard/dashboard-page/dashboard-page.component';
 
 const routes: Routes = [
   {
-    path: AppConfig.routes.login,
-    loadChildren: () => import('./core/components/login/login.module').then(m => m.LoginModule)
+    path: 'login',
+    component: LoginPageComponent,
   },
   {
-    path: AppConfig.routes.dashboard,
-    loadChildren: () => import('./core/components/dashboard/dashboard.module').then(m => m.DashboardModule)
-  }
+    path: 'dashboard',
+    component: DashboardPageComponent,
+  },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '**', redirectTo: '/404' },
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
-    })
+    }),
   ],
   exports: [RouterModule],
-  providers: []
+  providers: [],
 })
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}
