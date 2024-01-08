@@ -1,0 +1,22 @@
+[
+{
+    "id": 1,
+    "name": "Devender Singh",
+    "username": "devender",
+    "email": "devender@sdk.com",
+    "password": "suvarna@2024",
+    "address": {
+      "street": "Bazaar street",
+      "suite": "Apt. 556",
+      "city": "Hunsur",
+      "pincode": "571105"
+    },
+    "phone": "7411199784",
+    "website": "google.com",
+    "company": {
+      "name": "Navkar Jewellers",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }
+]

@@ -4,6 +4,8 @@ export let APP_CONFIG = new InjectionToken('app.config');
 
 export const BASE_URL = '/suvarna/api';
 
+export const API_URL = 'https://dummyjson.com/auth/';
+
 export const AppConfig: any = {
   routes: {
     dashboard: 'dashboard', // Updated to match the Angular route
