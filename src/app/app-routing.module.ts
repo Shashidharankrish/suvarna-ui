@@ -14,8 +14,8 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardPageComponent,
   },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/404' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' },
 ];
 
 @NgModule({
